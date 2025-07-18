@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BizLink Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h1>BizLink</h1>
+      <nav>
+        <ul class="menu">
+          <li class="active">Dashboard</li>
+          <li>Tasks <span class="badge">2</span></li>
+          <li>Activity</li>
+          <li>Customers</li>
+          <li>Settings</li>
+        </ul>
+        <h3>Projects</h3>
+        <ul class="projects">
+          <li>BizConnect <span class="badge">7</span></li>
+          <li>Growth Hub</li>
+          <li>Conversion Path</li>
+          <li>Marketing</li>
+        </ul>
+        <h3>Members</h3>
+        <ul class="members">
+          <li>Sandra Perry</li>
+          <li>Antony Cardenas</li>
+          <li>Jamal Connolly</li>
+          <li>Cara Carr</li>
+          <li>Iona Rollins</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <input type="text" placeholder="Search customer..." />
+        <div class="top-actions">
+          <button>Sort by</button>
+          <button>Filters</button>
+          <button class="profile">Me</button>
+          <button class="add">+ Add customer</button>
+        </div>
+      </header>
+
+      <section class="stats">
+  <div class="stat-card chart">
+    <h4>📊 New Customers</h4>
+    <canvas id="customerChart" width="300" height="150"></canvas>
+  </div>
+  <div class="stat-card gauge">
+    <h4>✅ Successful Deals</h4>
+    <div class="gauge-circle">
+      <span>68%</span>
+    </div>
+  </div>
+  <div class="stat-card">
+    <h4>📋 Tasks in Progress</h4>
+    <p>53 Tasks</p>
+  </div>
+  <div class="stat-card">
+    <h4>💰 Prepayments</h4>
+    <p>$15,890</p>
+  </div>
+</section>
+
+      <section class="pipeline">
+        <div class="column">
+          <h4>Contacted (12)</h4>
+          <div class="card">ByteBridge</div>
+          <div class="card">AI Synergy</div>
+          <div class="card">LeadBoost Agency</div>
+        </div>
+        <div class="column">
+          <h4>Negotiation (17)</h4>
+          <div class="card">SkillUp Hub</div>
+          <div class="card">Thera Well</div>
+          <div class="card">SwiftCargo</div>
+        </div>
+        <div class="column">
+          <h4>Offer Sent (13)</h4>
+          <div class="card">FitLife Nutrition</div>
+          <div class="card">Prime Estate</div>
+          <div class="card">NextGen University</div>
+        </div>
+        <div class="column">
+          <h4>Deal Closed (12)</h4>
+          <div class="card">CloudSphere</div>
+          <div class="card">Advantage Medi</div>
+          <div class="card">Safebank Solutions</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
